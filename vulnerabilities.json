@@ -1,0 +1,14 @@
+{
+  "ports": {
+    "21": "FTP transmits credentials in plaintext. Switch to SFTP immediately.",
+    "23": "Telnet is entirely unencrypted! Replace with SSH.",
+    "80": "HTTP traffic is unencrypted. Ensure HTTPS (443) is enforced.",
+    "135": "Windows RPC interface. Keep firewalled from the public internet.",
+    "445": "SMB protocol. Ensure patched against EternalBlue (CVE-2017-0144)."
+  },
+  "keywords": {
+    "openssh": "SSH Service. Ensure root login is disabled & key-based auth is enforced.",
+    "apache": "Apache Web Server. Check for outdated modules and disable directory indexing.",
+    "nginx": "Nginx Web Server. Ensure server tokens are turned off to hide specific versioning."
+  }
+}
